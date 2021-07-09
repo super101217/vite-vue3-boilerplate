@@ -16,12 +16,12 @@ for (const plugin in plugins) {
 }
 // Nuxt-like middleware setup
 app.mixin({
-  beforeCreate() {
+  async beforeCreate() {
     if (this.$options.middleware) {
       for (const middleware of this.$options.middleware) {
         for (const mdPath in middlewares) {
           if (mdPath === `./middleware/${middleware}.js`) {
-            middlewares[mdPath].default({
+            await middlewares[mdPath].default({
               ...app.config.globalProperties,
               env: import.meta.env,
             })
