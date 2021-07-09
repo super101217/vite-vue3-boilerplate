@@ -5,29 +5,29 @@
     "email": "rafaelytakei@gmail.com"
   },
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
-    "@vueuse/core": "^5.0.3",
-    "vue": "^3.0.5",
+    "@vueuse/core": "^5.1.3",
+    "vue": "^3.1.4",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.3",
+    "@vitejs/plugin-vue": "^1.2.4",
     "@vue/compiler-sfc": "^3.1.4",
     "@vue/eslint-config-prettier": "^6.0.0",
     "eslint": "^7.30.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-vue": "^7.12.1",
+    "eslint-plugin-vue": "^7.13.0",
     "prettier": "^2.3.2",
-    "vite": "^2.3.8",
-    "vite-plugin-components": "0.11.0",
-    "vite-plugin-pages": "^0.14.8",
+    "vite": "^2.4.1",
+    "vite-plugin-components": "^0.12.2",
+    "vite-plugin-pages": "^0.14.9",
     "vite-plugin-vue-layouts": "^0.3.1",
-    "vue-router": "^4"
+    "vue-router": "^4.0.10"
   }
 }
