@@ -9,6 +9,7 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'eslint:recommended',
     '@vue/prettier',
+    'vue-global-api',
   ],
   parserOptions: {
     ecmaVersion: 2021,

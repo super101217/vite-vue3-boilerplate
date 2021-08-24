@@ -14,16 +14,9 @@
   </p>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
-export default {
-  name: 'HelloWorld',
-  setup() {
-    const count = ref(0)
-
-    return { count }
-  },
-}
+const count = ref(0)
 </script>
 
 <style scoped>

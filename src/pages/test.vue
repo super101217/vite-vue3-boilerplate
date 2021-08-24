@@ -3,14 +3,6 @@
   <router-link to="/">Change route</router-link>
 </template>
 
-<script>
-export default {
-  name: 'Test',
-  middleware: ['exampleMiddleware'],
-  setup() {
-    return {}
-  },
-}
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

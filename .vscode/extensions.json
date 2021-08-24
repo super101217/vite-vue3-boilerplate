@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar" 
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur"
+  ]
+}
