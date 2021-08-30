@@ -3,6 +3,6 @@
   <router-link to="/">Change route</router-link>
 </template>
 
-<script setup></script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped></style>
