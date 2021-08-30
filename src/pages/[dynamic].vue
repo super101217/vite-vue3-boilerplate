@@ -9,4 +9,4 @@ const route = useRoute()
 const path = ref(route.path)
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>
