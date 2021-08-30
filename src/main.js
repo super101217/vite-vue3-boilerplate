@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import 'vue-global-api'
 const plugins = import.meta.globEager('./plugins/*.js')
-const app = createApp(App)
+export const app = createApp(App)
 // Apply store
 app.use(store)
 // Apply router

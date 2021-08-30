@@ -9,8 +9,13 @@ export default defineConfig({
   plugins: [Vue(), Pages(), Layouts(), ViteComponents()],
   resolve: {
     alias: [
-      { find: '@', replacement: path.resolve('/src') },
-      { find: '~', replacement: path.resolve('/src') },
+      { find: '@', replacement: path.resolve(__dirname, './src') },
+      { find: '~', replacement: path.resolve(__dirname, './src') },
     ],
+  },
+  server: {
+    fs: {
+      allow: ['.'],
+    },
   },
 })
