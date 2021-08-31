@@ -6,12 +6,31 @@ import { createPinia } from 'pinia'
 const plugins = import.meta.globEager('./plugins/*.js')
 export const app = createApp(App)
 
-// Apply router
+// Router setup (vue-router)
 app.use(router)
-// Apply store
+
+// Store setup (pinia)
 const pinia = createPinia()
+
+// Set here which stores should be persisted
+const storesToPersist = ['auth']
+
+// Handling recovery of persisted data
 if (localStorage.getItem('piniaState')) {
-  pinia.state.value = JSON.parse(localStorage.getItem('piniaState') || '{}')
+  const dataFromLocalStorage = JSON.parse(
+    localStorage.getItem('piniaState') || '{}'
+  )
+  console.log(dataFromLocalStorage)
+  for (const store of storesToPersist) {
+    if (dataFromLocalStorage[store]) {
+      pinia.state.value = {
+        ...pinia.state.value,
+        [store]: {
+          ...dataFromLocalStorage[store],
+        },
+      }
+    }
+  }
 }
 app.use(pinia)
 watch(

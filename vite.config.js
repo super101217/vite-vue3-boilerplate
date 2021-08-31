@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
-import ViteComponents from 'vite-plugin-components'
+import Components from 'unplugin-vue-components/vite'
 import * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 
@@ -12,8 +12,8 @@ export default defineConfig({
     Vue(),
     Pages(),
     Layouts(),
-    ViteComponents({
-      globalComponentsDeclaration: true,
+    Components({
+      dts: true,
     }),
     AutoImport({
       imports: ['vue', 'vue-router'],
