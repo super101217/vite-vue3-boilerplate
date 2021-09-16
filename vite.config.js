@@ -5,6 +5,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
+import WindiCSS from 'vite-plugin-windicss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
     AutoImport({
       imports: ['vue', 'vue-router'],
     }),
+    WindiCSS(),
   ],
   resolve: {
     alias: [
