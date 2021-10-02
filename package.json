@@ -12,17 +12,17 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@vueuse/core": "^6.4.1",
-    "pinia": "^2.0.0-rc.9",
+    "@vueuse/core": "^6.5.3",
+    "pinia": "^2.0.0-rc.10",
     "uuid": "^8.3.2",
-    "vue": "^3.2.12",
+    "vue": "^3.2.19",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@types/uuid": "^8.3.1",
-    "@typescript-eslint/eslint-plugin": "^4.31.2",
-    "@vitejs/plugin-vue": "^1.8.1",
-    "@vue/compiler-sfc": "^3.2.12",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@vitejs/plugin-vue": "^1.9.2",
+    "@vue/compiler-sfc": "^3.2.19",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint": "^7.32.0",
@@ -30,12 +30,12 @@
     "eslint-plugin-vue": "^7.18.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.3",
-    "unplugin-auto-import": "^0.4.6",
-    "unplugin-vue-components": "^0.15.2",
-    "vite": "^2.5.10",
+    "unplugin-auto-import": "^0.4.10",
+    "unplugin-vue-components": "^0.15.6",
+    "vite": "^2.6.2",
     "vite-plugin-pages": "^0.18.1",
-    "vite-plugin-vue-layouts": "^0.4.1",
-    "vite-plugin-windicss": "^1.4.3",
-    "windicss": "^3.1.7"
+    "vite-plugin-vue-layouts": "^0.5.0",
+    "vite-plugin-windicss": "^1.4.9",
+    "windicss": "^3.1.8"
   }
 }
