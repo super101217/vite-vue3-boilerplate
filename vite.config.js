@@ -5,8 +5,8 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
-import WindiCSS from 'vite-plugin-windicss'
-
+import Unocss from 'unocss/vite'
+import { presetUno, presetAttributify } from 'unocss'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -19,7 +19,9 @@ export default defineConfig({
     AutoImport({
       imports: ['vue', 'vue-router'],
     }),
-    WindiCSS(),
+    Unocss({
+      presets: [presetAttributify(), presetUno()],
+    }),
   ],
   resolve: {
     alias: [

@@ -2,13 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import { createPinia } from 'pinia'
-// windicss layers
-import 'virtual:windi-base.css'
-import 'virtual:windi-components.css'
-// windicss utilities should be the last style import
-import 'virtual:windi-utilities.css'
-// windicss devtools support (dev only)
-import 'virtual:windi-devtools'
+
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
 
 // @ts-ignore: globEager is a Vite-only feature
 const plugins = import.meta.globEager('./plugins/*.js')
@@ -43,7 +39,7 @@ if (localStorage.getItem('piniaState')) {
 app.use(pinia)
 watch(
   pinia.state,
-  (state) => {
+  (state: any) => {
     localStorage.setItem('piniaState', JSON.stringify(state))
   },
   { deep: true }
