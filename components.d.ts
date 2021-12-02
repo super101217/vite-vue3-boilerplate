@@ -4,7 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('C:/Users/Administrator/Documents/Projects/Personal/vite-vue3-boilerplate/src/components/HelloWorld.vue')['default']
+    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
   }
 }
 
