@@ -5,8 +5,6 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import * as path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
-import Unocss from 'unocss/vite'
-import { presetUno, presetAttributify } from 'unocss'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -17,10 +15,14 @@ export default defineConfig({
       dts: true,
     }),
     AutoImport({
+      include: [
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+      ],
       imports: ['vue', 'vue-router'],
-    }),
-    Unocss({
-      presets: [presetAttributify(), presetUno()],
+      eslintrc: {
+        enabled: true,
+      },
     }),
   ],
   resolve: {

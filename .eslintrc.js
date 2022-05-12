@@ -10,8 +10,12 @@ module.exports = {
     'eslint:recommended',
     '@vue/prettier',
     '@vue/typescript/recommended',
+    './eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 2021,
+  },
+  rules: {
+    'vue/multi-word-component-names': 'off',
   },
 }
