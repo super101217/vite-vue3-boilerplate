@@ -10,6 +10,10 @@ npm i -g pnpm (in case you don't have pnpm installed - yarn/npm also work, but p
 pnpm i
 ```
 
+## Enabling TS Takeover mode
+
+https://vuejs.org/guide/typescript/overview.html#volar-takeover-mode
+
 ---
 
 ## Running a development server
